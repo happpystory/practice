@@ -1,0 +1,24 @@
+
+$main-color: #665acc;
+$font-weights: (
+    "regular" : 400,
+    "medium" : 500,
+    "bold" : 700
+);
+
+body {
+    background-color: $main-color;
+    font-weight: map-get($font-weights, "regular");
+}
+
+.new {
+    font-size: 2rem;
+
+    &__font {
+        font-size: 5rem;
+    }
+
+    &:hover {
+        color: $main-color;
+    } 
+}
